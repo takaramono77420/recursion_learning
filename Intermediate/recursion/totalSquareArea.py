@@ -4,4 +4,7 @@ def totalSquareArea(x):
     if x == 1:
         return pow(x, 2)
     
+
+
+    
     return x * pow(x, 2) + totalSquareArea(x - 1)
