@@ -1,0 +1,28 @@
+import math
+def calcWeightByExercise(type_of_exercise,minutes):
+    # 関数を完成させてください
+    intensity = exercise(type_of_exercise).intensity()
+    calc_per_min = intensity * 3.5 * 85.5 / 200
+
+    calories_consumed = calc_per_min * minutes
+    weight_loss = calories_consumed / 7700
+
+    return math.floor((85.5 - weight_loss)*10) / 10
+
+
+class exercise:
+
+    def __init__(self, exercise):
+        self.exercise_name = exercise
+
+    def intensity(self):
+        if self.exercise_name == "running":
+            return 8
+        elif self.exercise_name == "walking":
+            return 3
+        elif self.exercise_name == "tennis":
+            return 5
+        elif self.exercise_name == "rope jump":
+            return 9
+        else:
+            return 0
