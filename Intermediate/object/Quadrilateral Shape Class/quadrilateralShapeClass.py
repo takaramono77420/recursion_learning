@@ -62,7 +62,7 @@ LineJ = Line(Point(4,0), Point(6,2))
 
 lineK =  Line( Point(6,2),  Point(6,6))
 
-lineL =  Line( Point(6,6),  Point(0,0))
+lineL =  Line( Point(6,7),  Point(0,0))
 
 trapezoid =  QuadrilateralShape(lineI,LineJ,lineK,lineL)
 
