@@ -22,7 +22,7 @@ try:
 
     try:
         while True:
-            data = sock.recv(32).decode('utf-8')
+            data = sock.recv(32) #.decode('utf-8')
 
             if data:
                 print('Server response: ' + data)
